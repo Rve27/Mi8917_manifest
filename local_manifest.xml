@@ -16,6 +16,10 @@
            fetch="https://github.com/Rv-Trees"
            clone-depth="1" />
 
+<remote  name="los"
+           fetch="https://github.com/LineageOS"
+           clone-depth="1" />
+
  <!-- Dependencies -->
 
  <!-- Replacements -->
@@ -29,6 +33,7 @@
   <project path="vendor/xiaomi/mithorium-common-4.19" name="proprietary_vendor_xiaomi_mithorium-common-4.19" groups="device" remote="mi-thorium"/>
 
  <!-- Hardware -->
+  <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="los" revision="lineage-21" />
   <project path="hardware/mithorium/common" name="android_hardware_mithorium_common" groups="device" remote="mi-thorium" revision="lineage">
     <linkfile src="_Android.mk" dest="hardware/mithorium/Android.mk" />
     <linkfile src="mithorium_qcom_hals.mk" dest="hardware/mithorium/mithorium_qcom_hals.mk" />
